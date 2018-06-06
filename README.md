@@ -33,9 +33,11 @@ Details of the installation go here.
 
 ## Application ABC set up
 1. In your Monitis account, create a Contact.  http://www.monitis.com/support/alerts/alerting-via-webhook-contact
-2. When you add your contact to a rule, you will have to verify the contact.  xMatters won't do that, so you will need to copy and paste the following url into a browser.
+2. When you add your contact to a rule, you will have to verify the contact.  xMatters won't do that, so you will need to copy and paste the following url into a browser or contact Monitis support to confirm the contact..
 http://monitis.com/confirmation/userkey/confirmContact/contactId/code”
 http://monitis.com/confirmation/1MKCDQ2J2DD2JGQ1O3F6M8R030/confirmContact/https://advisors.na5.xmatters.com/api/integration/1/functions/cf91c7d3-d8f1-4f53-8d2d-bb387b5db58c/triggers?apiKey=50b04be6-f7c0-4c11-90fe-8daf900c4f0c/code
+
+
 
 
 # Testing

@@ -16,7 +16,7 @@ Monitor your web performance and reliability for websites, servers, networks & a
 * [FileA.js](FileA.js) - An example javascript file to be pasted into a Shared Library in the Integration builder. Note the comments
 
 # How it works
-Add some info here detailing the overall architecture and how the integration works. The more information you can add, the more helpful this sections becomes. For example: An action happens in Application XYZ which triggers the thingamajig to fire a REST API call to the xMatters inbound integration on the imported communication plan. The integration script then parses out the payload and builds an event and passes that to xMatters. 
+Add a Contact in Monitis using the webhook type.  Use the contact for any alert rules.  When an alert is created, Monitis will send the information to xMatters to notify the on-call resource.
 
 # Installation
 Details of the installation go here. 
@@ -32,18 +32,10 @@ Details of the installation go here.
 
 
 ## Application ABC set up
-Any specific steps for setting up the target application? The more precise you can be, the better!
-
-Images are encouraged. Adding them is as easy as:
-```
-<kbd>
-  <img src="media/cat-tax.png" width="200" height="400">
-</kbd>
-```
-
-<kbd>
-  <img src="media/cat-tax.png" width="200" height="400">
-</kbd>
+1. In your Monitis account, create a Contact.  http://www.monitis.com/support/alerts/alerting-via-webhook-contact
+2. When you add your contact to a rule, you will have to verify the contact.  xMatters won't do that, so you will need to copy and paste the following url into a browser.
+http://monitis.com/confirmation/userkey/confirmContact/contactId/code”
+http://monitis.com/confirmation/1MKCDQ2J2DD2JGQ1O3F6M8R030/confirmContact/https://advisors.na5.xmatters.com/api/integration/1/functions/cf91c7d3-d8f1-4f53-8d2d-bb387b5db58c/triggers?apiKey=50b04be6-f7c0-4c11-90fe-8daf900c4f0c/code
 
 
 # Testing
